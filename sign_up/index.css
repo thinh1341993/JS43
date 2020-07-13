@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sriracha', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #cccccc;
+    width: 800px;
+    padding: 50px 60px 50px 60px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.input-wrapper {
+    border-bottom: 1px solid #282822;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-wrapper>label {
+    display: inline-block;
+    width: 25px;
+}
+
+.input-wrapper>input {
+    border: none;
+    width: 100%;
+    height: 35px;
+    background: none;
+}
+
+button,
+input:focus {
+    outline: none;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #4292dc;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-title {
+    padding-bottom: 30px;
+}
+
+.decoration-img {
+    width: 300px;
+    height: 300px;
+}
+
+.decoration-link {
+    color: #282822;
+}
+
+.decoration-link-container {
+    text-align: right;
+}
+
+button {
+    cursor: pointer;
+}
+
+.mesage-error {
+    color: red;
+    font-size: 14px;
+}
+
+.message-success {
+    color: green;
+    font-size: 14px;
+}
+
+button:disabled {
+    background-color: grey;
+}
+
+.aside-left {
+    /* 30% chiều rộng cả màn hình */
+    width: 30vw;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 50vw;
+    height: 100vh;
+}
+
+.aside-right {
+    width: 20vw;
+    height: 100vh;
+}
+
+.title {
+    height: 50px;
+    background-color: #f1f5f8;
+    color: #509de1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conversation {
+    background-color: #f1f5f8;
+    border-bottom: 1px solid #d6dfe6;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.conversation:hover {
+    background-color: #e5e5e5;
+}
+
+.conversation-title {
+    font-weight: bolder;
+}
+
+.conversation-member {
+    font-size: 14px;
+}
+
+.conversations-list {
+    overflow-y: scroll;
+    height: calc(100vh - 50px - 157px);
+}
+
+.form-add-message {
+    display: flex;
+    align-items: center;
+}
+
+.form-add-conversation {
+    padding: 10px;
+}
+
+.message span {
+    padding: 10px;
+    background-color: #4a8af4;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 3px;
+    max-width: 50%;
+    word-break: break-word;
+}
+
+.messages-list {
+    height: calc(100vh - 50px - 56px);
+    overflow-y: scroll;
+}
+
+.your {
+    text-align: right;
+}
+
+.your span {
+    background-color: #263238;
+}
+
+@media only screen and (max-width: 700px) {
+    .aside-right {
+        display: none;
+    }
+    .aside-left {
+        width: 30%;
+    }
+    .chat-container {
+        width: 70%;
+    }
+}
